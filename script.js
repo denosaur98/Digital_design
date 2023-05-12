@@ -6,7 +6,8 @@ window.addEventListener('scroll', function() {
 const linkRates = document.getElementById(1).addEventListener('click', scrollToBlocks)
 const linkRules = document.getElementById(2).addEventListener('click', scrollToRules)
 
-function scrollToBlocks() {
+function scrollToBlocks(event) {
+  event.preventDefault();
   const blocksContainer = document.getElementById('rates')
   window.scrollTo({
     top: blocksContainer.offsetTop,
@@ -14,7 +15,8 @@ function scrollToBlocks() {
   })
 }
 
-function scrollToRules() {
+function scrollToRules(event) {
+  event.preventDefault();
   const rulesContainer = document.querySelector('.rules_container')
   window.scrollTo({
     top: rulesContainer.offsetTop,
