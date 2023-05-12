@@ -21,3 +21,25 @@ function scrollToRules() {
     behavior: 'smooth'
   })
 }
+
+const firstHeading = document.querySelector('h1')
+const scrollUpLink = document.createElement('a')
+scrollUpLink.href = '#'
+scrollUpLink.textContent = 'ВВЕРХ'
+scrollUpLink.classList.add('btn_up', 'hidden')
+document.body.appendChild(scrollUpLink)
+window.addEventListener('scroll', () => {
+  const bounding = firstHeading.getBoundingClientRect()
+  if (bounding.top < 0) {
+    scrollUpLink.classList.remove('hidden')
+  } else {
+    scrollUpLink.classList.add('hidden')
+  }
+})
+scrollUpLink.addEventListener('click', (event) => {
+  event.preventDefault()
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+})

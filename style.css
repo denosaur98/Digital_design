@@ -171,6 +171,33 @@ main {
   border-radius: 7px;
   padding: 0.7vw; 
 }
+.btn_up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  font-family: 'Comfortaa';
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: teal;
+  border-radius: 7px;
+  font-weight: 900;
+  width: 5.12vw;
+  height: 3.66vw;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+.btn_up:hover {
+  width: 70px;
+  height: 50px;
+  transform: translateY(-5px);
+  z-index: 999;
+}
+.hidden {
+  display: none;
+}
 
 footer {
   display: flex;
