@@ -216,7 +216,7 @@ main {
 .btn_buy {
   position: absolute;
   bottom: 1.7vw;
-  left: 7vw;
+  left: 7.3vw;
   right: 7vw;
   cursor: pointer;
   display: inline-block;
@@ -238,6 +238,82 @@ main {
   color: rgb(255, 255, 255);
   transform: scale(1.05);
   transition: 0.2s all;
+}
+
+.buy-form {
+  position: fixed;
+  top: 11.2%;
+  left: 34.8%;
+  width: 100%;
+  height: 100%;
+  background: rgb(255,228,43);
+  background: radial-gradient(circle, rgba(255,228,43,1) 0%, rgba(109,255,50,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 35vw;
+  border-radius: 7px;
+  font-family: 'Comfortaa';
+}
+.buy-form form {
+  width: 60%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.buy-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.title_form {
+  text-decoration: underline;
+  font-weight: 900;
+}
+.buy-form input[type="number"] {
+  width: 27vw;
+  height: 2vw;
+  border-radius: 3px;
+  background: none;
+  outline: none;
+  font-size: 1.2vw;
+  padding-left: 10px;
+  border: 1px solid teal;
+}
+.buy-form button[type="radio"],
+.buy-form textarea {
+  outline: none;
+  width: 27vw;
+  padding: 10px;
+  border: 1px solid teal;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: none;
+  resize: none;
+  font-family: 'Comfortaa';
+}
+.btns_form_container {
+  display: flex;
+}
+.buy-form button[type="submit"],
+.buy-form button[type="button"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: teal;
+  cursor: pointer;
+  margin-right: 10px;
+  font-family: 'Comfortaa';
+}
+.buy-form button[type="submit"]:hover,
+.buy-form button[type="button"]:hover {
+  background-color: #000000;
+  transition: 0.3s all;
+  color: teal;
 }
 
 footer {

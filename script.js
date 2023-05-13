@@ -68,3 +68,46 @@ function getCurrentDate() {
   const year = now.getFullYear()
   return `${dayOfWeek}, ${weekNumber} неделя ${monthName} ${year}г`
 }
+
+//Форма
+function openForm(id) {
+  const form = document.createElement('form');
+  form.classList.add('buy-form');
+  form.innerHTML = `
+    <label for="quantity" class="title_form">Количество:</label>
+    <input type="number" name="quantity" id="quantity" min="1" max="3" required>
+    <br>
+    <label class="title_form">Цвет:</label>
+    <br>
+    <label for="red">Красный</label>
+    <input type="radio" name="color" value="red" id="red">
+    <label for="green">Зеленый</label>
+    <input type="radio" name="color" value="green" id="green">
+    <label for="blue">Синий</label>
+    <input type="radio" name="color" value="blue" id="blue">
+    <br>
+    <label for="comment" class="title_form">Комментарий:</label>
+    <textarea name="comment" id="comment" rows="4" maxlength="2000"></textarea>
+    <br>
+    <div class="btns_form_container">
+      <button type="submit">Купить</button>
+      <button type="button" onclick="closeForm()">Закрыть</button>
+    </div>
+  `;
+  document.body.appendChild(form);
+  const closeButton = form.querySelector('button[type="button"]');
+  closeButton.addEventListener('click', closeForm);
+}
+
+function closeForm() {
+  const form = document.querySelector('.buy-form');
+  document.body.removeChild(form);
+}
+
+const buttons = document.querySelectorAll('.btn_buy');
+buttons.forEach(button => {
+  const id = button.getAttribute('id');
+  button.addEventListener('click', () => {
+    openForm(id);
+  });
+});
