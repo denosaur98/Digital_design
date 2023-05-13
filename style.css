@@ -83,13 +83,15 @@ main {
 .block {
   border: 2px solid rgb(0, 0, 0);
   width: 23vw;
-  height: 25vw;
+  height: 30vw;
   margin: 2.93vw;
   box-shadow: 1px 1px 20px 1px black;
   border-radius: 7px;
   padding-top: 2vw;
   padding-left: 1vw;
   padding-right: 1vw;
+  display: flex;
+  flex-direction: column;
 }
 .title_rates {
   font-weight: bold;
@@ -187,7 +189,7 @@ main {
   height: 100%;
   transition: all 0.3s ease-in-out;
   background: rgb(234,255,23);
-background: radial-gradient(circle, rgba(234,255,23,1) 33%, rgba(109,255,50,1) 100%);
+  background: radial-gradient(circle, rgba(234,255,23,1) 33%, rgba(109,255,50,1) 100%);
   box-shadow: 1px 1px 15px 1px teal;
   z-index: 999;
 }
@@ -197,6 +199,16 @@ background: radial-gradient(circle, rgba(234,255,23,1) 33%, rgba(109,255,50,1) 1
 }
 .hidden {
   display: none;
+}
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  font-size: 1vw;
+  font-family: 'Comfortaa';
+  margin-top: auto;
+  margin-bottom: 0.7vw;
 }
 
 footer {
