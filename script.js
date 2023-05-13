@@ -70,14 +70,14 @@ function getCurrentDate() {
 }
 
 //Форма
-function openForm(id) {
-  const form = document.createElement('form');
-  form.classList.add('buy-form');
+function openForm(id, rateName) {
+  const form = document.createElement('form')
+  form.classList.add('buy-form')
   form.innerHTML = `
     <label for="quantity" class="title_form">Количество:</label>
     <input type="number" name="quantity" id="quantity" min="1" max="3" required>
     <br>
-    <label class="title_form">Цвет:</label>
+    <label class="title_form">Цвет самоката:</label>
     <br>
     <label for="red">Красный</label>
     <input type="radio" name="color" value="red" id="red">
@@ -93,21 +93,35 @@ function openForm(id) {
       <button type="submit">Купить</button>
       <button type="button" onclick="closeForm()">Закрыть</button>
     </div>
-  `;
-  document.body.appendChild(form);
-  const closeButton = form.querySelector('button[type="button"]');
-  closeButton.addEventListener('click', closeForm);
+  `
+  const colorNames = {
+    red: 'красного',
+    green: 'зеленого',
+    blue: 'синего',
+  }
+  document.body.appendChild(form)
+  const closeButton = form.querySelector('button[type="button"]')
+  closeButton.addEventListener('click', closeForm)
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    const quantity = document.getElementById('quantity').value
+    const color = document.querySelector('input[name="color"]:checked').value
+    const comment = document.getElementById('comment').value
+    const colorName = colorNames[color];
+    const message = `Вы купили: ${rateName}, ${quantity}шт, самокат ${colorName} цвета. Комментарий: ${comment}`;
+    alert(message)
+    closeForm()
+  })
 }
-
 function closeForm() {
-  const form = document.querySelector('.buy-form');
-  document.body.removeChild(form);
+  const form = document.querySelector('.buy-form')
+  document.body.removeChild(form)
 }
-
-const buttons = document.querySelectorAll('.btn_buy');
+const buttons = document.querySelectorAll('.btn_buy')
 buttons.forEach(button => {
-  const id = button.getAttribute('id');
   button.addEventListener('click', () => {
-    openForm(id);
-  });
-});
+    const id = button.closest('.block').getAttribute('id')
+    const rateName = document.querySelector(`#${id} .title_rates`).textContent.trim()
+    openForm(id, rateName)
+  })
+})
