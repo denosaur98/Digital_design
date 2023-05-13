@@ -258,6 +258,7 @@ main {
   height: 35vw;
   border-radius: 7px;
   font-family: 'Comfortaa';
+  box-shadow: 1px 20px 40px 1px rgb(0, 0, 0);
 }
 .buy-form form {
   width: 60%;
@@ -326,4 +327,19 @@ footer {
   background: radial-gradient(circle, rgba(255,228,43,1) 0%, rgba(109,255,50,1) 100%);
   border-top: 2px solid rgb(0, 0, 0);
   bottom: auto;
+}
+
+.theme-btn {
+  cursor: pointer;
+  height: 2vw;
+  width: 9vw;
+  background: none;
+  border: none;
+  font-family: 'Comfortaa';
+  text-decoration: underline;
+  margin-right: -11vw;
+}
+.theme-btn:hover {
+  color: teal;
+  transition: 0.3s all;
 }
