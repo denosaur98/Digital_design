@@ -9,8 +9,8 @@ header {
   align-items: center;
   width: 100%;
   height: 5vw;
-  background: rgb(255,228,43);
-  background: radial-gradient(circle, rgba(255,228,43,1) 0%, rgba(109,255,50,1) 100%);
+  background: rgb(50,195,255);
+  background: radial-gradient(circle, rgba(50,195,255,1) 0%, rgba(0,0,0,1) 73%);
   border-bottom: 2px solid rgb(0, 0, 0);
   z-index: 998;
 }
@@ -26,7 +26,7 @@ header {
   padding: 0 7.32vw;
 }
 .link:hover {
-  color: teal;
+  color: rgb(255, 255, 255);
   transition: 0.3s all;
 }
 
@@ -38,14 +38,15 @@ main {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background: rgb(234,255,23);
-  background: radial-gradient(circle, rgba(234,255,23,1) 33%, rgba(109,255,50,1) 100%);
+  background: rgb(50,195,255);
+  background: radial-gradient(circle, rgba(50,195,255,1) 0%, rgba(0,0,0,1) 73%);
 }
 .title {
   font-weight: bold;
   font-size: 3vw;
   font-family: 'Comfortaa';
   margin-top: 3vw;
+  color: #ffffff;
 }
 .info {
   font-size: 1.5vw;
@@ -53,6 +54,7 @@ main {
   width: 80%;
   line-height: 150%;
   margin-top: 3vw;
+  color: #ffffff;
 }
 .abonements_conatiner {
   display: flex;
@@ -102,6 +104,7 @@ main {
   font-family: 'Comfortaa';
   text-align: center;
   margin-bottom: 1vw;
+  color: #ffffff;
 }
 .img1 {
   background-image: url('https://cdn-icons-png.flaticon.com/512/747/747725.png');
@@ -135,6 +138,7 @@ main {
   font-family: 'Comfortaa';
   text-align: center;
   margin-top: 1vw;
+  color: #ffffff;
 }
 .infoT {
   display: flex;
@@ -191,13 +195,13 @@ main {
   width: 5vw;
   height: 100%;
   transition: all 0.3s ease-in-out;
-  background: rgb(234,255,23);
-  background: radial-gradient(circle, rgba(234,255,23,1) 33%, rgba(109,255,50,1) 100%);
+  background: rgb(50,195,255);
+  background: radial-gradient(circle, rgba(50,195,255,1) 0%, rgba(0,0,0,1) 73%);
   box-shadow: 1px 1px 15px 1px teal;
   z-index: 999;
 }
 .btn_up:hover {
-  color: teal;
+  color: rgb(255, 255, 255);
   z-index: 999;
 }
 .hidden {
@@ -212,6 +216,7 @@ main {
   font-family: 'Comfortaa';
   margin-top: auto;
   margin-bottom: 0.7vw;
+  color: #ffffff;
 }
 .btn_buy {
   position: absolute;
@@ -246,8 +251,8 @@ main {
   left: 34.8%;
   width: 100%;
   height: 100%;
-  background: rgb(255,228,43);
-  background: radial-gradient(circle, rgba(255,228,43,1) 0%, rgba(109,255,50,1) 100%);
+  background: rgb(50,195,255);
+  background: radial-gradient(circle, rgba(50,195,255,1) 0%, rgba(0,0,0,1) 73%);  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,6 +264,7 @@ main {
   border-radius: 7px;
   font-family: 'Comfortaa';
   box-shadow: 1px 20px 40px 1px rgb(0, 0, 0);
+  color: #ffffff;
 }
 .buy-form form {
   width: 60%;
@@ -275,6 +281,7 @@ main {
   font-weight: 900;
 }
 .buy-form input[type="number"] {
+  color: #ffffff;
   width: 27vw;
   height: 2vw;
   border-radius: 3px;
@@ -286,6 +293,7 @@ main {
 }
 .buy-form button[type="radio"],
 .buy-form textarea {
+  color: #ffffff;
   outline: none;
   width: 27vw;
   padding: 10px;
@@ -323,8 +331,8 @@ footer {
   align-items: center;
   width: 100%;
   height: 5vw;
-  background: rgb(255,228,43);
-  background: radial-gradient(circle, rgba(255,228,43,1) 0%, rgba(109,255,50,1) 100%);
+  background: rgb(50,195,255);
+  background: radial-gradient(circle, rgba(50,195,255,1) 0%, rgba(0,0,0,1) 73%);  
   border-top: 2px solid rgb(0, 0, 0);
   bottom: auto;
 }
@@ -338,6 +346,7 @@ footer {
   font-family: 'Comfortaa';
   text-decoration: underline;
   margin-right: -11vw;
+  color: #ffffff;
 }
 .theme-btn:hover {
   color: teal;

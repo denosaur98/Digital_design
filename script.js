@@ -127,22 +127,14 @@ buttons.forEach(button => {
 })
 
 //Тема
-function toggleDarkMode() {
-  const body = document.body
-  const header = document.querySelector('header')
-  const btn = document.getElementById('theme-toggle')
-  body.classList.toggle('dark')
-  header.classList.toggle('dark')
-  if (body.classList.contains('dark')) {
-    btn.textContent = 'Светлая тема'
+const switchBtn = document.getElementById('switchBtn')
+switchBtn.addEventListener('click', function() {
+  let theme = document.getElementById('theme')
+  if (theme.getAttribute('href') == 'style.css') {
+    theme.href = 'dark.css'
+    switchBtn.textContent = 'Светлая тема'
   } else {
-    btn.textContent = 'Тёмная тема'
+    theme.href = 'style.css'
+    switchBtn.textContent = 'Тёмная тема'
   }
-}
-const toggleBtn = document.createElement('button')
-toggleBtn.classList.add('theme-btn')
-toggleBtn.id = 'theme-toggle'
-toggleBtn.textContent = 'Тёмная тема'
-toggleBtn.addEventListener('click', toggleDarkMode)
-const header = document.querySelector('header')
-header.appendChild(toggleBtn)
+})
