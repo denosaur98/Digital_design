@@ -133,6 +133,60 @@ main {
   width: 23vw;
   height: 15vw;
 }
+.img4 {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/009/266/327/original/plus-sign-icon-free-png.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  width: 23vw;
+  height: 15vw;
+}
+.img5 {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/390/390910.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  width: 23vw;
+  height: 15vw;
+}
+.img6 {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/189/189639.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  width: 23vw;
+  height: 15vw;
+}
+.img7 {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2309/2309943.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  width: 23vw;
+  height: 15vw;
+}
+.img8 {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/6057/6057088.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  width: 23vw;
+  height: 15vw;
+}
+.img9 {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2721/2721122.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  width: 23vw;
+  height: 15vw;
+}
 .info_rates {
   font-size: 1.2vw;
   font-family: 'Comfortaa';
@@ -148,6 +202,7 @@ main {
   width: 80%;
   line-height: 150%;
   margin-top: 3vw;
+  color: #ffffff;
 }
 .rules_container {
   display: grid;
