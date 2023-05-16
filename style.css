@@ -430,6 +430,7 @@ footer {
   font-family: 'Comfortaa';
   text-decoration: underline;
   margin-right: -11vw;
+  font-size: 1vw;
 }
 .theme-btn:hover {
   color: teal;
