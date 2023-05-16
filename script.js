@@ -71,6 +71,9 @@ function getCurrentDate() {
 
 //Форма
 function openForm(id, rateName) {
+  const overlay = document.createElement('div')
+  overlay.classList.add('overlay')
+  document.body.appendChild(overlay)
   const form = document.createElement('form')
   form.classList.add('buy-form')
   form.innerHTML = `
@@ -117,6 +120,8 @@ function openForm(id, rateName) {
 function closeForm() {
   const form = document.querySelector('.buy-form')
   document.body.removeChild(form)
+  const overlay = document.querySelector('.overlay')
+  overlay.classList.remove('overlay')
 }
 const buttons = document.querySelectorAll('.btn_buy')
 buttons.forEach(button => {
