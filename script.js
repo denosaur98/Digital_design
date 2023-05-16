@@ -74,6 +74,7 @@ function openForm(id, rateName) {
   const form = document.createElement('form')
   form.classList.add('buy-form')
   form.innerHTML = `
+    <h2 class="form_title">${rateName}</h2>
     <label for="quantity" class="title_form">Количество:</label>
     <input type="number" name="quantity" id="quantity" min="1" max="3" required>
     <br>
@@ -137,4 +138,17 @@ switchBtn.addEventListener('click', function() {
     theme.href = 'style.css'
     switchBtn.textContent = 'Тёмная тема'
   }
+})
+
+//Список категорий
+const categoryLinks = document.querySelectorAll('.category-list a')
+categoryLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault()
+    const blockId = link.getAttribute('href').substring(1)
+    const block = document.getElementById(blockId)
+    const rateName = block.querySelector('.title_rates').textContent.trim()
+    openForm(blockId, rateName)
+    window.location.href = link.getAttribute('href')
+  })
 })
