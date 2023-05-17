@@ -519,4 +519,16 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .infoT {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    font-family: 'Comfortaa';
+    width: 80%;
+    line-height: 150%;
+    margin-top: 3vw;
+  }
+  footer {
+    font-size: 1vw;
+  }
 }
