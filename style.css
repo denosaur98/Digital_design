@@ -316,8 +316,8 @@ main {
 }
 .buy-form form {
   width: 60%;
-  max-width: 500px;
-  padding: 20px;
+  max-width: 36.6vw;
+  padding: 1.46vw;
   border-radius: 5px;
 }
 .buy-form label {
@@ -328,10 +328,12 @@ main {
   font-family: 'Comfortaa';
   font-weight: 900;
   margin-bottom: 1vw;
+  font-size: 2vw;
 }
 .title_form {
   text-decoration: underline;
   font-weight: 900;
+  font-size: 1vw;
 }
 .buy-form input[type="number"] {
   width: 27vw;
@@ -340,17 +342,17 @@ main {
   background: none;
   outline: none;
   font-size: 1.2vw;
-  padding-left: 10px;
+  padding-left: 0.73vw;
   border: 1px solid teal;
 }
 .buy-form button[type="radio"],
 .buy-form textarea {
   outline: none;
   width: 27vw;
-  padding: 10px;
+  padding: 0.73vw;
   border: 1px solid teal;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 0.73vw;
   background: none;
   resize: none;
   font-family: 'Comfortaa';
@@ -361,13 +363,13 @@ main {
 }
 .buy-form button[type="submit"],
 .buy-form button[type="button"] {
-  padding: 10px;
+  padding: 0.73vw;
   border-radius: 5px;
   border: none;
   color: #fff;
   background-color: teal;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 0.73vw;
   font-family: 'Comfortaa';
 }
 .buy-form button[type="submit"]:hover,
@@ -403,7 +405,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
-  gap: 10px;
+  gap: 0.73vw;
 }
 .category-list li {
   grid-column: span 1;
@@ -438,5 +440,83 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-  
+  header {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6vw;
+    background: rgb(255,228,43);
+    background: radial-gradient(circle, rgba(255,228,43,1) 0%, rgba(109,255,50,1) 100%);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    z-index: 998;
+  }
+  .link {
+    color: rgb(0, 0, 0);
+    font-size: 3.83vw;
+    font-family: 'Comfortaa';
+    text-decoration: none;
+    padding: 0 7.32vw;
+  }
+  .theme-btn {
+    cursor: pointer;
+    height: 2vw;
+    width: 9vw;
+    background: none;
+    border: none;
+    font-family: 'Comfortaa';
+    text-decoration: none;
+    margin-top: -1vw;
+    margin-right: 5vw;
+    font-size: 1.5vw;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 5vw;
+    font-family: 'Comfortaa';
+    margin-top: 4vw;
+  }
+  .info {
+    font-size: 2.5vw;
+    font-family: 'Comfortaa';
+    width: 80%;
+    line-height: 150%;
+    margin-top: 4vw;
+  }
+  .abonements_block {
+    width: 35vw;
+    padding: 2vw;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin: 3vw;
+    box-shadow: 1px 1px 20px 1px teal;
+    border-radius: 7px;
+  }
+  .title_block {
+    font-size: 3vw;
+    font-family: 'Comfortaa';
+    margin-bottom: 2vw;
+    line-height: 120%;
+  }
+  .info_block {
+    font-size: 2vw;
+    font-family: 'Comfortaa';
+    color: teal;
+    line-height: 150%;
+  }
+  .block {
+    position: relative;
+    border: 0.5vw solid rgb(0, 0, 0);
+    width: 23vw;
+    height: 30vw;
+    margin: 2.93vw;
+    box-shadow: 1px 1px 20px 1px black;
+    border-radius: 7px;
+    padding-top: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+  }
 }
