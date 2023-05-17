@@ -442,7 +442,8 @@ footer {
 @media screen and (max-width: 550px) {
   header {
     position: sticky;
-    display: flex;
+    display: grid;
+    grid-template: 1fr 1fr;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -467,7 +468,7 @@ footer {
     border: none;
     font-family: 'Comfortaa';
     text-decoration: none;
-    margin-top: -1vw;
+    margin-top: 5vw;
     margin-right: 5vw;
     font-size: 1.5vw;
   }
