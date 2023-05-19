@@ -454,6 +454,7 @@ footer {
     z-index: 998;
   }
   .link {
+    margin-top: 1vw;
     color: rgb(0, 0, 0);
     font-size: 3.83vw;
     font-family: 'Comfortaa';
@@ -461,11 +462,13 @@ footer {
     padding: 0 7.32vw;
   }
   .theme-btn {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
     cursor: pointer;
-    height: 2vw;
+    height: 6vw;
     width: 9vw;
-    background: none;
-    border: none;
+    background: rgb(255,228,43);
+    background: radial-gradient(circle, rgba(255,228,43,1) 0%, rgba(109,255,50,1) 100%);
     font-family: 'Comfortaa';
     text-decoration: none;
     margin-top: 5vw;
@@ -540,5 +543,55 @@ footer {
     background-color: none;
     text-align: center;
     color: #333;
+  }
+  .buy-form {
+    position: fixed;
+    top: 11.2%;
+    left: 10%;
+    width: 80vw;
+    height: 110vw;
+    background: rgb(255,228,43);
+    background: radial-gradient(circle, rgba(255,228,43,1) 0%, rgba(109,255,50,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    font-family: 'Comfortaa';
+    box-shadow: 1px 20px 40px 1px rgb(0, 0, 0);
+  }
+  .form_title {
+    font-family: 'Comfortaa';
+    font-weight: 900;
+    margin-bottom: 0vw;
+    font-size: 6vw;
+  }
+  .title_form {
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 4vw;
+  }
+  .buy-form input[type="number"] {
+    width: 67vw;
+    height: 5vw;
+    border-radius: 3px;
+    background: none;
+    outline: none;
+    font-size: 3.2vw;
+    padding-left: 0.73vw;
+    border: 1px solid teal;
+  }
+  .buy-form textarea {
+    outline: none;
+    width: 67vw;
+    padding: 0.73vw;
+    border: 1px solid teal;
+    border-radius: 5px;
+    margin-bottom: 0.73vw;
+    background: none;
+    resize: none;
+    font-family: 'Comfortaa';
   }
 }
