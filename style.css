@@ -338,7 +338,7 @@ main {
 }
 .btn_buy {
   position: absolute;
-  bottom: 2.8vw;  
+  bottom: 1.8vw;
   left: 7.3vw;
   right: 7vw;
   cursor: pointer;
@@ -627,6 +627,9 @@ footer {
     margin-right: 5vw;
     font-size: 1.5vw;
   }
+  .theme-btn:hover {
+    color:rgb(0, 0, 0)
+  }
   .title {
     font-weight: bold;
     font-size: 5vw;
@@ -666,7 +669,7 @@ footer {
     position: relative;
     border: 0.5vw solid rgb(0, 0, 0);
     width: 23vw;
-    height: 35vw;
+    height: 37vw;
     margin: 2.93vw;
     -webkit-box-shadow: 1px 1px 20px 1px black;
     box-shadow: 1px 1px 20px 1px black;

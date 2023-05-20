@@ -346,7 +346,7 @@ main {
 }
 .btn_buy {
   position: absolute;
-  bottom: 2.8vw;
+  bottom: 1.8vw;
   left: 7.3vw;
   right: 7vw;
   cursor: pointer;
@@ -635,6 +635,9 @@ footer {
     font-size: 1.5vw;
     color: #ffffff;
   }
+  .theme-btn:hover {
+    color:rgb(255, 255, 255)
+  }
   .title {
     font-weight: bold;
     font-size: 5vw;
@@ -674,7 +677,7 @@ footer {
     position: relative;
     border: 0.5vw solid rgb(0, 0, 0);
     width: 23vw;
-    height: 35vw;
+    height: 37vw;
     margin: 2.93vw;
     -webkit-box-shadow: 1px 1px 20px 1px black;
     box-shadow: 1px 1px 20px 1px black;
@@ -689,7 +692,6 @@ footer {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    align-items: center;
   }
   .infoT {
     display: -webkit-box;
