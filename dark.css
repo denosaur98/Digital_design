@@ -74,6 +74,7 @@ main {
   font-size: 2vw;
   font-family: 'Comfortaa';
   margin-bottom: 2vw;
+  line-height: 200%;
 }
 .info_block {
   font-size: 1vw;
@@ -203,6 +204,7 @@ main {
   line-height: 150%;
   margin-top: 3vw;
   color: #ffffff;
+  white-space: nowrap;
 }
 .rules_container {
   display: grid;
