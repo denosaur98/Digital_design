@@ -338,7 +338,7 @@ main {
 }
 .btn_buy {
   position: absolute;
-  bottom: 1.8vw;
+  bottom: 2.8vw;  
   left: 7.3vw;
   right: 7vw;
   cursor: pointer;
@@ -666,7 +666,7 @@ footer {
     position: relative;
     border: 0.5vw solid rgb(0, 0, 0);
     width: 23vw;
-    height: 30vw;
+    height: 35vw;
     margin: 2.93vw;
     -webkit-box-shadow: 1px 1px 20px 1px black;
     box-shadow: 1px 1px 20px 1px black;
